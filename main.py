@@ -7,9 +7,13 @@ class Jsoner:
     def __init__(
             self,
             models: list[BaseModel] | BaseModel,
+            filename: str,
             save_immediately: bool = False):
+        
         self.models = models
+        self.filename = filename
         self.save_immediately = save_immediately
+
         self.objects_to_save = []
 
     def _belong_to_models(self, model) -> bool:
@@ -26,5 +30,11 @@ class Jsoner:
         if self.save_immediately:
             self.save()
 
+    def _get_object_from_file(self):
+        with open(self.filename, "r") as file:
+            data = json.load(file)
+        return data
+
     def save(self):
         pass
+
