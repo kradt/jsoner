@@ -1,3 +1,4 @@
+import os
 import json
 from pydantic import BaseModel
 
@@ -46,16 +47,20 @@ class Jsoner:
         if self.save_immediately:
             self.save()
 
-    def _get_json_from_file(self) -> dict:
+    def _get_json_from_file(self) -> dict | None:
         """
             Extract data from json file to python dict 
-            :return data: dict from json file
+            :return data: dict from json file or None
         """
+        if not os.path.exists(self.filename):
+            return None
+        
         with open(self.filename, "r") as file:
             file = file.read()
             if not file:
                 return None
             data = json.loads(file)
+
         return data
 
     def save(self, indent: int = 4, ensure_ascii: bool = True, allow_nan: bool = True):
