@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='jsoner',
+    name='jsoner-lib',
     version='0.1',
     license='MIT',
     author="kradt",
