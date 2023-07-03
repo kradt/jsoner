@@ -1,0 +1,47 @@
+[
+    {
+        "username": "feg2005",
+        "password": "hash",
+        "confirm": true
+    },
+    {
+        "username": "mynamedima",
+        "password": "hash",
+        "confirm": true
+    },
+    {
+        "username": "dunder",
+        "password": "hash",
+        "confirm": false
+    },
+    {
+        "username": "supercreator",
+        "password": "hash",
+        "confirm": true
+    },
+    {
+        "username": "superman",
+        "password": "hash",
+        "confirm": true
+    },
+    {
+        "username": "person22",
+        "password": "hash",
+        "confirm": false
+    },
+    {
+        "username": "coolcat",
+        "password": "hash",
+        "confirm": true
+    },
+    {
+        "username": "lifer",
+        "password": "hash",
+        "confirm": true
+    },
+    {
+        "username": "musicalyman",
+        "password": "hash",
+        "confirm": false
+    }
+]
