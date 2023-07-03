@@ -1,4 +1,4 @@
-#Jsoner
+# Jsoner
 
 Convenient and fast adding objects to json file
 
@@ -57,7 +57,7 @@ jsn.save(indent=4)
             {
                 "name": "Terminator",
                 "lazy": false
-            }s
+            }
         ]
     },
     {
