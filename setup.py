@@ -8,12 +8,11 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='jsoner-lib',
-    version='0.3',
+    version='0.5',
     license='MIT',
     author="kradt",
     author_email='sidorenkoarem950@gmail.com',
-    packages=find_packages('jsoner'),
-    package_dir={'': 'jsoner'},
+    packages=find_packages(),
     url='https://github.com/kradt/jsoner',
     keywords='jsoner',
     long_description=long_description,
@@ -21,5 +20,6 @@ setup(
     install_requires=[
           'pydantic',
       ],
+    python_requires='>=3.11'
 
 )
